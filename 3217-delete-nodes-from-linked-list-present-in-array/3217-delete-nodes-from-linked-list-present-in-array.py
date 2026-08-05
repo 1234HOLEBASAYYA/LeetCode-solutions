@@ -13,8 +13,7 @@ class Solution:
         while curr:
             if curr.val in nums:
                 pre.next=curr.next
-                curr=curr.next
             else:
                 pre=pre.next
-                curr=curr.next
+            curr=curr.next
         return dummy.next
