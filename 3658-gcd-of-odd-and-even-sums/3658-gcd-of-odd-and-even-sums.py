@@ -1,3 +1,3 @@
 class Solution:
     def gcdOfOddEvenSums(self, n: int) -> int:
-       return n
+       return gcd(n*n, n*(n+1))
