@@ -8,8 +8,10 @@ class Solution:
             else:
                 p.append(x)
         ans=[]
-        for i in range(len(p)):
+        for i  in range(len(p)):
             ans.append(p[i])
             ans.append(n[i])
+            
         return ans
+   
         
