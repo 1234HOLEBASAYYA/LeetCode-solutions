@@ -1,7 +1,6 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s)!=len(t):
-            return False
+        if len(s)!=len(t):return False
         fre=[0]*26
         for i in range(len(s)):
             fre[ord(s[i])-ord('a')]+=1
@@ -10,5 +9,7 @@ class Solution:
             if count!=0:
                 return False
         return True
+
+
 
         
