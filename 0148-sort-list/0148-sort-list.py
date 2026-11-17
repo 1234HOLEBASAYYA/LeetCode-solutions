@@ -10,13 +10,10 @@ class Solution:
         while temp!=None:
             list.append(temp.val)
             temp=temp.next
-        s=sorted(list)
-        n=len(s)
         temp=head
-        for i in range(0,n):
+        s=sorted(list)
+        for i in range(len(list)):
             temp.val=s[i]
             temp=temp.next
         return head
-
-           
-
+        
